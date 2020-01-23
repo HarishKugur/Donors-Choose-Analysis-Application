@@ -1,0 +1,140 @@
+
+<div class="container" style="width:100%">
+
+  <nav class="navbar navbar-default navbar-fixed-top" style="background: #052631;">
+    <div class="container" style="margin-left: 0px;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#!/home" class="navbar-brand" style="color:#fffbfb">DonorsChoose</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <ul class="nav navbar-nav" style="margin-left: 10px;">
+          <li><a href="#!/about" style="color:#fffbfb">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" style="margin-right: -105px;">
+          <li><a href="#!/login" style="color:#fffbfb" data-toggle="modal" data-target="#exampleModalCenter">Logout</a></li>
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Logout
+          </button> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Do you really want to logout from the application
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">
+            <a href="#!/login">
+            Save changes</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container-fluid" style="width: 100%; margin-left: 5px; margin-right: 5px; padding: 0px; margin-top: 20px;">
+    <div class="row" style="width: 100%; margin-right: 0px; margin-left: 0px;">
+
+      <div class="col-sm-3 col-md-6 col-lg-4" style="width: 26%; margin-top: 20px; padding: 5px; padding-right: 0px; margin-left: -15px;">
+        <ul id="sideBar" class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a>Home</a></li>
+          <li role="presentation"><a href="#!/project">Projects</a></li>
+          <li role="presentation"><a href="#!/donors">Donors</a></li>
+          <li role="presentation"><a href="#!/donations">Donations</a></li>
+          <li role="presentation"><a href=#!/resources>Resources</a></li>
+        </ul>
+
+        <div class="card" style=" width: 30rem; margin-top: 5px; border: 1px solid #006487; padding: 5px;">
+          <div class="card-body">
+            <h5 class="card-title">DataSet Size</h5>
+            <h6 class="card-subtitle mb-2 text-muted">By row count</h6>
+            <p class="card-text">Click on the link below to get the tuples count of all the tables</p>
+            <a ng-click="displayRowCount()" class="card-link" style="cursor: pointer;">Get Row Count</a>
+            <input ng-if="totalRows" ng-model="totalRows" style="padding:5px; width:100%;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-9 col-md-6 col-lg-8" style="width:75%; padding-right: 0px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="100"
+          style="margin-top: -10px;">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img
+                src="images/Image2.jpg"
+                alt="Los Angeles" style="width:100%;height:525px;">
+            </div>
+
+            <div class="item">
+                <img src="images/Image3.jpg" alt="Chicago" style="width:100%;height:525px;">
+              </div>
+
+            <div class="item">
+                <img src="images/Image4.png" alt="Chicago" style="width:100%;height:525px;">
+              </div>
+
+            <div class="item">
+              <img src="images/Image5.jpg" alt="Chicago"
+                style="width:100%;height:525px;">
+            </div>
+
+            <div class="item">
+              <img src="images/Image6.jpg" alt="Chicago" style="width:100%;height:525px;">
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev" onClick="return false;">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next" onClick="return false;"> 
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+</div>

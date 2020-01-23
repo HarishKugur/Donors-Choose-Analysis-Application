@@ -1,0 +1,115 @@
+<div class="container" style="width:100%">
+
+  <nav class="navbar navbar-default navbar-fixed-top" style="background: #052631;">
+    <div class="container" style="margin-left: 0px;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#!/home" class="navbar-brand" style="color:#fffbfb">DonorsChoose</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <ul class="nav navbar-nav" style="margin-left: 10px;">
+          <li><a href="#!/about" style="color:#fffbfb">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" style="margin-right: -105px;">
+          <li><a href="#!/login" style="color:#fffbfb">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="width: 100%; margin-left: 5px; margin-right: 5px; padding: 0px; margin-top: 20px;">
+    <div class="row" style="width: 100%;">
+
+      <div class="col-sm-3 col-md-6 col-lg-4" style="width: 25%; margin-top: 20px; padding: 5px; padding-right: 0px;">
+        <ul id="sideBar" class="nav nav-pills nav-stacked">
+          <li role="presentation"><a href="#!/home">Home</a></li>
+          <li role="presentation" class="active"><a href="#!/project">Projects</a></li>
+          <li role="presentation"><a href="#!/donors">Donors</a></li>
+          <li role="presentation"><a href="#!/donations">Donations</a></li>
+          <li role="presentation"><a href="#!/resources">Resources</a></li>
+        </ul>
+
+        <div class="card" style=" width: 30rem; margin-top: 5px; border: 1px solid #006487; padding: 5px;">
+          <div class="card-body">
+            <h5 class="card-title">DataSet Size</h5>
+            <h6 class="card-subtitle mb-2 text-muted">By row count</h6>
+            <p class="card-text">Click on the link below to get the tuples count of all the tables</p>
+            <a ng-click="displayRowCount()" class="card-link" style="cursor: pointer;">Get Row Count</a>
+            <input ng-if="totalRows" ng-model="totalRows" style="padding:5px; width:100%;">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-6 col-lg-8" style="width:75%; padding-right: 0px;">
+        <h2>Analysis and Projections in Projects</h2>
+
+
+        <div class="panel-group" id="accordion">
+        
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" onClick="return false;">Most
+                  Expired Projects Based on Resource Category</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div ng-include="'project/project_q2.html'"></div>
+            </div>
+          </div>
+
+        
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" onClick="return false;">
+                  Month-wise Donation Distribution</a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div ng-include="'project/project_q4.html'"></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" onClick="return false;">
+                    Top 10 states with Highest Ratio of Expired Projects to Fully-Funded Projects </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div ng-include="'project/project_q5.html'"></div>
+              </div>
+            </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" onClick="return false;">Speed of
+                  Project Completion Time vs Number of Words in Project Need Statement</a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div ng-include="'project/project_q3.html'"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>

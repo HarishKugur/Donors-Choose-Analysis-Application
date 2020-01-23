@@ -1,0 +1,211 @@
+/* app css stylesheet */
+#sidebar {
+  width:25%;
+}
+
+.nav{
+  margin-bottom:20px;
+}
+
+.nav-stacked>li {
+  margin-bottom:15px;
+}
+
+#map{ width: 900px; height: 500px; }
+
+.panel-default>.panel-heading {
+  background-color: #073141 !important;
+  color: #fff !important;
+}
+
+.menu { 
+  border-bottom: none !important;
+}
+
+canvas { 
+  background:#fff;
+  border:1px solid #ccc; 
+  width: 800px !important;
+  height: 600px !important;
+  margin: 5px;
+}
+
+.carousel-indicators li {
+  background-color:#484745 !important;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+
+/* login page */
+
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+  /*background-image: url(../images/Donors_choose_700-1.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  background-position: center;
+  position: relative;
+  background: rgba(3, 73, 135, .4);
+}
+
+.login-area {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  margin: auto;
+  z-index: 2;
+  /*padding: 15px;*/
+}
+
+.login-welcome-header {
+  margin-top: 50px;
+  color: white;
+  text-align: right !important;
+  margin-top: 50px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-size: 35px !important;
+}
+
+.login-area-box {
+  width: 100%;
+  height: 285px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 24px;
+}
+
+.login-header {
+  /*text-transform: uppercase;*/
+  font-size: 14px;
+  color: #006487;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+  .login-header span {
+      font-size: 15px;
+  }
+
+.login-switch-button {
+  width: 100%;
+  height: 45px;
+  background: #049406;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  line-height: 45px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  border: solid 1px rgba(255,255,255,0.5);
+  overflow: hidden;
+}
+
+  .login-switch-button:hover {
+      background: #027002;
+  }
+
+  .login-switch-button i {
+      margin-right: 10px;
+      margin-top: 0;
+      font-size: 21px;
+      line-height: 45px;
+  }
+
+.textbox-wrap {
+  width: 100%;
+  height: 44px;
+  background: #F4F4F4;
+  border: solid 1px #a7a6a6;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.login-text {
+  width: 100%;
+  height: 44px;
+  padding-left: 40px;
+  font-size: 15px;
+  color: #374A5A;
+  border: 0;
+  background: #F4F4F4;
+}
+
+.textbox-wrap i {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  margin: auto;
+  font-size: 22px;
+  width: 18px;
+  height: 22px;
+  color: #006487;
+}
+
+.login-links {
+  width: 100%;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+  .login-links p {
+      color: #374A5A;
+      font-size: 14px;
+      cursor: pointer;
+  }
+
+      .login-links p:hover {
+          color: #999;
+      }
+
+.login-button {
+  width: 100%;
+  height: 44px;
+  background: #006487;
+  padding: 14px 0;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  border: 0;
+}
+
+  .login-button i {
+      margin-right: 10px;
+      margin-top: 0;
+      font-size: 21px;
+  }

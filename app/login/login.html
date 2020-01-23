@@ -1,0 +1,46 @@
+<!-- <p>This is the partial for view 1.</p> -->
+
+<div class="login-wrapper">
+    <img src="images/Donors_choose_700-1.jpg" alt="HomePage" width="100%" height="auto"
+        style="opacity:0.5; height:575px" />
+
+    <div class="company-logo" style="position:absolute;top:0px;">
+        <img src="images/DonorsChoose_org_logo.jpg" alt="Logo" width="auto" height="80px" />
+    </div>
+
+    <div class="login-area">
+
+        <div class="login-welcome-header">
+            <span class="login-welcome-header">Donors Choose.Org</span>
+        </div>
+
+        <!-- style="/* height: 325px; */" -->
+        <div id="userNameLoginBox" class="login-area-box">
+            <div class="login-header"><span>Sign-in using registered credentials</span></div>
+
+            <div class="textbox-wrap" style="margin-bottom: 20px;">
+                <input type="text" ng-model="loginInfo.username" name="UserName" required=""
+                    class="login-text login-user" placeholder="User Name" autocorrect="off" autocomplete="off"
+                    spellcheck="false" automation-id="username" autofocus="">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="textbox-wrap" style="margin-bottom: 10px;">
+                <input type="password" ng-model="loginInfo.password" name="Password" required=""
+                    class="login-text login-password" placeholder="Password" automation-id="password">
+                <i class="fa fa-lock"></i>
+            </div>
+            <button type="submit" class="login-button cm-cf" style="margin-top:10px;"
+                ng-click="authenticateLogin(loginInfo)" automation-id="loginBtn">
+                <span>Sign in</span>
+                <i class="fa fa-sign-in cm-right"></i>
+            </button>
+
+            <div class="alert alert-danger" role="alert" ng-if="!loginSuccessful"
+                style="height: 40px; margin-top: 5px; padding:10px;">
+                User Name/ Password is incorrect. Authentication Failed!
+            </div>
+
+        </div>
+
+    </div>
+</div>
